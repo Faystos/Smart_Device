@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Roboto Condensed Bold";  
+  src: url("../fonts/Roboto-Condensed/Roboto-Condensed-Bold.woff2") format("woff2"), url("../fonts/Roboto-Condensed/Roboto-Condensed-Bold.woff") format("woff");  
+}
+
+@font-face {
+  font-family: "PT Mono";  
+  src: url("../fonts/PT-Mono/PTMono-Regular.woff2") format("woff2"), url("../fonts/PT-Mono/PTMono-Regular.woff") format("woff");   
+}
+
+@font-face {
+  font-family: "Roboto Mediumd";  
+  src: url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Medium.woff") format("woff");  
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Mono";
+  font-weight: 400;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+  $mobile-width: 320px;
+  $tablet-width: 768px;
+  $desktop-width: 1024px;
+  $header-text-color: #ffff;

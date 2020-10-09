@@ -1,0 +1,202 @@
+.nav {  
+  background-color: blue;  
+
+  @media (min-width: $mobile-width) {
+    padding: 0 1rem;
+
+    &__wrap { 
+      max-width: 320px;     
+      display: flex;
+      align-items: center;
+      justify-content: space-between;  
+      margin: 0 auto;
+    }
+
+    &__block_logo {
+      margin: 1rem 0px 0px 0;
+    }
+  
+    &__logo_icon {
+      width: 38px;
+      height: 38px;
+    }
+  
+    &__logo_text_main {      
+      display: none;
+    }
+
+    &__block_communication {
+      display: flex;
+      margin: 0;
+    }
+  
+    &__block_menu {
+      margin: 10px 27px 0 auto;
+    }
+  
+    &__btn_menu {
+      width: 37px;
+      height: 13px;    
+      border-top: 1px solid #ffffff;
+      border-bottom: 1px solid #ffffff;      
+    }
+  
+    &__block_mail {
+      margin: 16px 22px 0 0;
+    }
+  
+    &__mail_icon {
+      width: 26px;
+      height: 19px;
+    }
+
+    &__mail_address {
+      display: none;
+    }
+  
+    &__block_phone {
+      margin: 13px 0 0 0;
+    }
+  
+    &__phone_icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__phone_btn {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 1.5rem;    
+    
+
+    &__wrap {      
+      padding-top: 16px;
+      max-width: 720px;
+    }
+    
+
+    &__block_logo {
+      display: flex;
+      align-items: center;      
+      margin: 3px 0px 0px 0;
+    }
+
+    &__logo_icon {
+      width: 52px;
+      height: 52px;
+      margin: 0 16px 0 0;
+    }
+
+    &__logo_text_main {
+      font-family: "Roboto Condensed Bold";
+      display: block;
+      width: 9rem;
+      font-size: 1.5rem;
+      color: $header-text-color;
+      line-height: 18px;
+      letter-spacing: .07rem;
+      margin: 8px 0 0 0;
+    }
+
+    &__logo_text_dop {
+      font-family: "Roboto Mediumd";
+      font-size: 12px;
+      color: #788891;
+      letter-spacing: .001rem;
+    }
+
+    &__block_menu {
+      margin: 0 2.3rem 3px auto;
+    }
+
+    &__block_communication {
+      margin: 0 0 0 0;
+    }    
+
+    &__block_mail {
+      margin: 3px 2rem 0 0;
+    }
+
+    &__block_phone {
+      margin: 0;
+    }
+
+    &__phone_address {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+
+    &__wrap {
+      max-width: 1420px;
+      padding: 1rem 4px 0 ;
+    }
+
+    &__block_logo {
+      margin: 16px 0 0 0;
+    }
+
+    &__block_menu {
+      margin: 15px auto 0 108px;
+    }
+
+    &__block_communication {
+      margin: 15px 0 0 0;
+    }
+
+    &__block_mail {
+      display: flex;
+      align-items: center;
+      margin: 0 5.4rem 0 0;
+    }
+
+    &__mail_icon {
+      width: 19px;
+      height: 14px;
+      margin: 0 1.3rem 0 0;
+    }
+
+    &__mail_address {
+      display: block;
+      font-family: "PT Mono";
+      color: $header-text-color;
+    }
+
+    &__block_phone {
+      display: flex;
+      align-items: center;
+    }
+
+    &__phone_icon {
+      width: 18px;
+      height: 18px;
+      margin: 0 1rem 0 0;
+    }
+
+    &__phone_address {
+      display: block;
+      font-family: "PT Mono";
+      color: $header-text-color;
+      margin: 0 3rem 0 0;
+      
+    }
+
+    &__phone_btn {
+      display: block;
+      width: 180px;
+      height: 45px;
+      font-family: "Roboto Condensed Bold";
+      text-transform: uppercase;
+      font-size: 14px;
+      color: $header-text-color;
+      border: 1px solid #fff;
+      border-radius: 5px;
+    }
+
+  }
+}
