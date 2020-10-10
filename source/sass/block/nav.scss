@@ -62,6 +62,10 @@
       width: 24px;
       height: 24px;
     }
+    
+    &__phone_address {
+      display: none;
+    }
 
     &__phone_btn {
       display: none;
@@ -122,43 +126,43 @@
 
     &__block_phone {
       margin: 0;
-    }
-
-    &__phone_address {
-      display: none;
-    }
+    }    
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
 
     &__wrap {
-      max-width: 1420px;
-      padding: 1rem 4px 0 ;
+      max-width: 1425px;
+      padding: .6rem .43rem;
     }
 
     &__block_logo {
-      margin: 16px 0 0 0;
+      margin: 23px 0 0 0;
+    }
+
+    &__logo_text_main {
+      letter-spacing: .04rem;
     }
 
     &__block_menu {
-      margin: 15px auto 0 108px;
+      margin: 15px auto 0 7.5%;
     }
 
     &__block_communication {
-      margin: 15px 0 0 0;
+      margin: 15px 4px 0 0;
     }
 
     &__block_mail {
       display: flex;
       align-items: center;
-      margin: 0 5.4rem 0 0;
+      margin: 5px 5.5rem 0 0;
     }
 
     &__mail_icon {
       width: 19px;
       height: 14px;
-      margin: 0 1.3rem 0 0;
+      margin: 0 1.25rem 0 0;
     }
 
     &__mail_address {
@@ -170,6 +174,7 @@
     &__block_phone {
       display: flex;
       align-items: center;
+      margin: 5px 0 0 0;
     }
 
     &__phone_icon {
@@ -188,11 +193,14 @@
 
     &__phone_btn {
       display: block;
-      width: 180px;
-      height: 45px;
+      width: 11rem;      
+      padding: .8rem 0 .8rem 0;
       font-family: "Roboto Condensed Bold";
+      font-size: 0.9rem;
+      letter-spacing: 0.05rem;      
+      text-align: center;
       text-transform: uppercase;
-      font-size: 14px;
+      font-size: 0.9rem;
       color: $header-text-color;
       border: 1px solid #fff;
       border-radius: 5px;
