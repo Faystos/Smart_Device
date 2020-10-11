@@ -1,5 +1,6 @@
 .nav {  
-  background-color: blue;  
+  background-color: transparent;
+  margin-bottom: -58px;  
 
   @media (min-width: $mobile-width) {
     padding: 0 1rem;
@@ -99,7 +100,7 @@
       display: block;
       width: 9rem;
       font-size: 1.5rem;
-      color: $header-text-color;
+      color: $white-text-color;
       line-height: 18px;
       letter-spacing: .07rem;
       margin: 8px 0 0 0;
@@ -168,7 +169,7 @@
     &__mail_address {
       display: block;
       font-family: "PT Mono";
-      color: $header-text-color;
+      color: $white-text-color;
     }
 
     &__block_phone {
@@ -186,7 +187,7 @@
     &__phone_address {
       display: block;
       font-family: "PT Mono";
-      color: $header-text-color;
+      color: $white-text-color;
       margin: 0 3rem 0 0;
       
     }
@@ -201,7 +202,7 @@
       text-align: center;
       text-transform: uppercase;
       font-size: 0.9rem;
-      color: $header-text-color;
+      color: $white-text-color;
       border: 1px solid #fff;
       border-radius: 5px;
     }

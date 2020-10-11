@@ -1,0 +1,36 @@
+.description {
+  
+
+  @media (min-width: $mobile-width) {
+    width: 100%;
+    min-height: 647px;
+    background: url(../../img/bg/description/description_bg.jpg) 98.5% 21.5% no-repeat,
+                url(../../img/bg/description/description_bg_main.jpg) 100% 0 / 100% no-repeat;
+                        
+  
+    &__wrap {
+      max-width: 320px;
+      padding: 1rem .95rem;
+      margin: 0 auto;
+    }
+
+    &__block_text {      
+      font-family: "Roboto Condensed Bold";
+      color: $white-text-color;
+      margin: 270px 0 0 0;
+    }
+
+    &__title {
+      width: 277px;
+      font-size: 2.5rem;
+      line-height: 46.88px;
+      text-transform: uppercase;
+      letter-spacing: 3.4px;      
+    }
+
+    &__parag {
+      
+    }
+  }
+  
+}
