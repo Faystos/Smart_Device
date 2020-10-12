@@ -1,8 +1,11 @@
 .nav {  
   background-color: transparent;
-  margin-bottom: -58px;  
+ 
+  font-family: "Roboto Condensed Bold";
+  color: $main-color-dark-block; 
 
   @media (min-width: $mobile-width) {
+    margin-bottom: -58px;
     padding: 0 1rem;
 
     &__wrap { 
@@ -38,8 +41,8 @@
     &__btn_menu {
       width: 37px;
       height: 13px;    
-      border-top: 1px solid #ffffff;
-      border-bottom: 1px solid #ffffff;      
+      border-top: 1px solid $main-color-dark-block;
+      border-bottom: 1px solid $main-color-dark-block;      
     }
   
     &__block_mail {
@@ -74,8 +77,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: -75px;
     padding: 0 1.5rem;    
-    
 
     &__wrap {      
       padding-top: 16px;
@@ -95,12 +98,10 @@
       margin: 0 16px 0 0;
     }
 
-    &__logo_text_main {
-      font-family: "Roboto Condensed Bold";
+    &__logo_text_main {      
       display: block;
       width: 9rem;
-      font-size: 1.5rem;
-      color: $white-text-color;
+      font-size: 1.5rem;      
       line-height: 18px;
       letter-spacing: .07rem;
       margin: 8px 0 0 0;
@@ -131,6 +132,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: -97px;
     padding: 0;
 
     &__wrap {
@@ -168,8 +170,7 @@
 
     &__mail_address {
       display: block;
-      font-family: "PT Mono";
-      color: $white-text-color;
+      font-family: "PT Mono";      
     }
 
     &__block_phone {
@@ -186,8 +187,7 @@
 
     &__phone_address {
       display: block;
-      font-family: "PT Mono";
-      color: $white-text-color;
+      font-family: "PT Mono";      
       margin: 0 3rem 0 0;
       
     }
@@ -195,17 +195,14 @@
     &__phone_btn {
       display: block;
       width: 11rem;      
-      padding: .8rem 0 .8rem 0;
-      font-family: "Roboto Condensed Bold";
+      padding: .8rem 0 .8rem 0;      
       font-size: 0.9rem;
       letter-spacing: 0.05rem;      
       text-align: center;
       text-transform: uppercase;
-      font-size: 0.9rem;
-      color: $white-text-color;
-      border: 1px solid #fff;
+      font-size: 0.9rem;      
+      border: 1px solid $main-color-dark-block;
       border-radius: 5px;
     }
-
   }
 }
