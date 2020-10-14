@@ -17,7 +17,8 @@
     }
 
     &__advantage {      
-      width: 290px;
+      // width: 290px;
+      width: 100%;
       min-height: 230px;
       font-family: "PT Mono";
       color: #666666;      
@@ -83,8 +84,7 @@
       background: url(../../img/bg/advantages/triangle_bg_tablet@2x.png) 100% -79% / 73% no-repeat;
     }
 
-    &__wrap {
-      max-width: 770px;          
+    &__wrap {                
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -93,8 +93,8 @@
       padding-top: 17px;
     }
 
-    &__advantage {
-      width: 345px;
+    &__advantage {      
+      width: 48%;
       margin: 0;
       margin-bottom: 30px;
       padding-bottom: 0;
