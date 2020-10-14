@@ -149,17 +149,19 @@
     }
 
     &__block_menu {
-      margin: 15px auto 0 7.5%;
+      margin: 15px auto 0 7.5%;      
     }
 
     &__block_communication {
-      margin: 15px 4px 0 0;
+      width: 654px;
+      margin: 15px 4px 0 15px;      
+      justify-content: space-between;      
     }
 
     &__block_mail {
       display: flex;
       align-items: center;
-      margin: 5px 5.5rem 0 0;
+      margin: 0 15px 0 0;
     }
 
     &__mail_icon {
@@ -176,7 +178,7 @@
     &__block_phone {
       display: flex;
       align-items: center;
-      margin: 5px 0 0 0;
+      margin: 0;
     }
 
     &__phone_icon {
@@ -187,22 +189,23 @@
 
     &__phone_address {
       display: block;
-      font-family: "PT Mono";      
-      margin: 0 3rem 0 0;
-      
+      width: 184px;
+      font-family: "PT Mono";
+      font-size: 1rem;     
+      margin: 6px 41px 0 0;      
     }
 
     &__phone_btn {
       display: block;
-      width: 11rem;      
+      width: 11rem;          
       padding: .8rem 0 .8rem 0;      
       font-size: 0.9rem;
       letter-spacing: 0.05rem;      
       text-align: center;
       text-transform: uppercase;
       font-size: 0.9rem;      
-      border: 1px solid $main-color-dark-block;
-      border-radius: 5px;
+      border: 1px solid $main-color-dark-block;      
+      border-radius: 5px;      
     }
   }
 }

@@ -1,0 +1,183 @@
+.advantages {
+
+  @media (min-width: $mobile-width) {
+    background:  url(../img/bg/advantages/triangle_bg_mobile.png) 100% 136.7% no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url(../img/bg/advantages/triangle_bg_mobile@2x.png) 100% 123% / 100% no-repeat;
+    }
+
+    margin-top: 37px;
+    margin-bottom: -200px;
+    padding-bottom: 200px;
+
+    &__wrap {
+      padding: 0 .9rem;
+      margin: 0 auto;
+    }
+
+    &__advantage {      
+      width: 290px;
+      min-height: 230px;
+      font-family: "PT Mono";
+      color: #666666;      
+      padding: 24.55px 5px 5px 25px;
+      border: 1px solid #EBEBEB;
+      border-left: 2px solid #00B2FF;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      background: $main-color-dark-block;
+
+      &:hover {
+        background: #00B2FF;
+        color: $main-color-dark-block;
+        .advantages__title {
+          color: $main-color-dark-block;
+        }
+
+        .advantages__icon {
+          fill: $main-color-dark-block;
+        }        
+      }
+    } 
+    
+    &__icon {
+      fill: #00B2FF;
+    }
+
+    &__title {
+      width: 247px;
+      font-family: "Roboto Condensed Bold";
+      font-size: 20px;
+      color: #00B2FF;
+      margin-top: 7px;
+      line-height: 26px;
+
+    }
+
+    &__parag {
+      display: block;
+      width: 250px;
+      line-height: 22px;
+      margin-top: 11px;
+      margin-bottom: 20px;    
+    }
+
+    .negative-margin-top { 
+      margin-top: -5px;           
+    }    
+
+    .icon-suppliers {      
+      margin: -2px 0px 6px -2px;
+    }
+
+    .icon-privacy {      
+      margin: 3px 0px 0 -2px;
+    }   
+  }
+  @media (min-width: $tablet-width) {
+    background:  url(../img/bg/advantages/triangle_bg_tablet.png) 100% -48.3% no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url(../../img/bg/advantages/triangle_bg_tablet@2x.png) 100% -79% / 73% no-repeat;
+    }
+
+    &__wrap {
+      max-width: 770px;          
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 1.56rem;
+      padding-right: 1.56rem;
+      padding-top: 17px;
+    }
+
+    &__advantage {
+      width: 345px;
+      margin: 0;
+      margin-bottom: 30px;
+      padding-bottom: 0;
+    }
+
+    &__title {
+      width: 298px;
+      font-size: 24px;
+      line-height: 34px;
+      margin-top: 2px;
+    }
+
+    &__parag {
+      width: 297px;
+      margin-top: 9px;
+    }
+
+    .negative-margin-top { 
+      margin-top: 15px;           
+    }
+
+    .icon-privacy {      
+      margin: 0 0 5px 0;
+    }
+    
+  }
+  @media (min-width: $desktop-width) {
+    background: url(../img/bg/advantages/triangle_bg_rigth_desktop.png) 98% 47% no-repeat,
+                url(../img/bg/advantages/triangle_bg_center_desktop.png) 53.3% 50% no-repeat,
+                url(../img/bg/advantages/triangle_bg_left_small_desktop.png) 13% 5% no-repeat,
+                url(../img/bg/advantages/triangle_bg_left_big_desktop.png) 0% 150% no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/bg/advantages/triangle_bg_rigth_desktop@2x.png),
+                        url(../img/bg/advantages/triangle_bg_center_desktop@2x.png),
+                        url(../img/bg/advantages/triangle_bg_left_small_desktop@2x.png),
+                        url(../img/bg/advantages/triangle_bg_left_big_desktop@2x.png);
+      background-size: 17%, 45%, 17.6%, 30%;                  
+    }    
+
+    margin-top: 0;
+    padding-top: 94px;
+    padding-bottom: 400px;    
+
+    &__wrap {
+      max-width: 1219px; 
+      padding-bottom: 0;     
+    }
+
+    &__advantage {
+      width: 49%;
+      min-height: 299px;
+      margin-bottom: 30px;     
+    }    
+
+    &__title {
+      font-family: "Roboto Condensed";
+      font-size: 1.5rem;
+      margin: 14px 0 0 17px;   
+    }
+
+    &__parag {
+      width: 89%;
+      margin: 17px 0 0 22px;
+      font-size: 1rem;
+    }
+
+    .icon-time {
+      margin: 16px 0px 0 17px;
+    }
+
+    .icon-suppliers {
+      margin: 18px 0 0 25px;
+    }
+
+    .icon-privacy {
+      margin: 27px 0 0 20px
+    }
+
+    .icon-costing {
+      margin: 19px 0 0 22px
+    }
+  }
+}
+
+

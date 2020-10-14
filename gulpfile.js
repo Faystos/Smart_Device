@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
@@ -21,7 +21,7 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([ autoprefixer() ]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))

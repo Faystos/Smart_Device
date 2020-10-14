@@ -1,3 +1,9 @@
+
+@font-face {
+font-family: "Roboto Condensed";
+src: url("../fonts/Roboto-Condensed/Roboto-Condensed.woff2") format("woff2"), url("../fonts/Roboto-Condensed/Roboto-Condensed.woff") format("woff");
+}
+
 @font-face {
   font-family: "Roboto Condensed Bold";  
   src: url("../fonts/Roboto-Condensed/Roboto-Condensed-Bold.woff2") format("woff2"), url("../fonts/Roboto-Condensed/Roboto-Condensed-Bold.woff") format("woff");  
@@ -50,8 +56,12 @@ a {
   color: inherit;
 }
 
+.note-margin-top {
+  margin-top: 0;
+}
+
 
   $mobile-width: 320px;
   $tablet-width: 768px;
   $desktop-width: 1024px;
-  $main-color-dark-block: #ffff;
+  $main-color-dark-block: #ffffff;
