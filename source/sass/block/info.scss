@@ -4,23 +4,27 @@
     margin-top: 42px;
     padding-bottom: 50px;
 
-    &__wrap{
+    &__wrap {
+      max-width: 320px;
       padding: 0 .9rem;
       margin: 0 auto;
       
-    }
+    }   
 
     &__title {
       font-family: "Roboto Condensed";
       font-size: 28px;
       color: #666666;
-      margin-bottom: 26px;
-      
+      margin-bottom: 26px;      
     }
 
     &__parag {
       font-family: "PT Mono";
       line-height: 22px;
+    }
+
+    &__parag-desk {
+      display: none;
     }
 
     &__btn {
@@ -39,8 +43,77 @@
     }
   }
 
-  @media (min-width: $tablet-width){}
-  @media (min-width: $desktop-width){}
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
 
-  
+    &__wrap {
+      max-width: 770px;
+      padding: 0 1.56rem;
+    }
+
+    &__block-info {      
+      padding: 0 0 0 186px;
+      position: relative;
+      
+      &::before {
+        content: "";
+        width: 200px;
+        height: 365px;
+        background: url(../img/bg/info/info_bg_tablet.jpg) no-repeat;
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url(../img/bg/info/info_bg_tablet@2x.jpg);
+          background-size: 122%;
+        }
+
+        position: absolute;
+        top: -7px;
+        left: -26px;
+      }
+    }
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 29px;
+    }
+
+    &__btn {
+      margin-top: 42px;
+    }
+
+    .parag-top {
+      margin-bottom: 20px;
+    }    
+  }
+
+  @media (min-width: $desktop-width){
+    margin-top: 80px;
+
+    &__wrap {
+      max-width: 1220px;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+    
+    &__block-info {
+      padding-left: 182px;
+
+      &::before {
+        background-size: 107%;        
+        top: 0;
+        left: -23px;
+      }
+    }    
+
+    &__dot-mob {
+      display: none;
+    }
+
+    &__parag-desk {
+      display: block;
+    }    
+  }  
 }
+
