@@ -107,7 +107,6 @@
     }
   }
 
-
   @media (min-width: $tablet-width)  {
     padding-top: 84px;
 
@@ -145,10 +144,97 @@
       padding-left: 20px;
       padding-right: 20px;
       height: 159.63px;
+      margin-bottom: 41px;
+    }
+
+    &__block_submit {
+      display: flex;    
+      justify-content: space-between;  
+    }
+
+    &__submit {
+      width: 48%;
+    }
+
+    &__block_check {
+      width: 50%;
+      padding: 08px 0 0 24px;
+    }
+
+    &__block_check p {
+      margin-left: 16px;
     }
   }
 
+  @media (min-width: $desktop-width)  {
+    padding-bottom: 82px;
+     background-image: url(../../img/bg/form/triangle_bg_rigth_bot.png),
+                       url(../../img/bg/form/triangle_bg_rigth_top.png);                       
+     background-repeat: no-repeat, no-repeat;    
+     background-position: 1576px 126%, 1640px 11%;     
 
+     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../../img/bg/form/triangle_bg_rigth_bot@2x.png),
+                        url(../../img/bg/form/triangle_bg_rigth_top@2x.png);
+      background-size: 18%, 14%;
+     }   
 
-  @media (min-width: $desktop-width)  {}
+    &__wrap {
+      max-width: 1220px;      
+      display: flex;
+      flex-direction: column;      
+      align-items: flex-end;
+      padding: 11px 24px 0 0;
+      margin: 0 auto;           
+    }
+
+    &__block_text {
+      width: 48%;
+      margin: 0;
+      
+    }
+
+    &__block_text h3 {
+      font-size: 36px;
+      margin-bottom: 18px;
+    }
+
+    &__form {
+      width: 48%;
+      position: relative;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: -179px;
+        left: -824px;
+        width: 142%;
+        height: 535px;
+        background-image: url(../../img/bg/form/plane.png),
+                          url(../../img/bg/form/triangle_bg_left_small.png),
+                          url(../../img/bg/form/triangle_bg_left_big.png);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: 66% 47%, 6% 99%, 34% 101%;        
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url(../../img/bg/form/plane@2x.png),
+                            url(../../img/bg/form/triangle_bg_left_small@2x.png),
+                            url(../../img/bg/form/triangle_bg_left_big@2x.png);
+          background-size: 62%, 46%, 78%;
+        }
+      }
+    }
+
+    &__block_inp {
+      margin-bottom: 0;
+    }
+
+    &__inp-text {
+      height: 154px;
+      padding-top: 9px;
+      margin-bottom: 34px;
+    }
+  }
+
+    
 }
