@@ -7,7 +7,9 @@
   height: 100%;
   background:rgba(0, 0, 0, .9);
   font-family: "Roboto Condensed";
-  color: #FFFFFF;  
+  color: $main-color-dark-block;  
+  padding: 16rem 0;
+  z-index: 999;
 
   &--open {
     display: block;
@@ -18,30 +20,63 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 25.6%;;
-    height: 605px;
+    max-width: 30.5rem;
+    max-height: 605px;    
     background: #00B2FF;
-    opacity: 1;
-    z-index: 11;
+    opacity: 1;    
+    padding: 16px 38px 34px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 16.56px;
+    height: 16.56px;      
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 125%;
+      height: 1px;
+      border: 1px solid #FFFFFF;
+      border-radius: 5px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(135deg);      
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 125%;
+      height: 1px;
+      border: 1px solid #FFFFFF;
+      border-radius: 5px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);  
+    }
   }
 
   & h3 {
-    font-size: 28px;
-    margin: 16px 0 0 40px;
+    font-size: 28px;    
+    margin-top: 16px;
   }
 
   & p {
-    width: 75%;
+    width: 89%;
     font-family: "PT Mono";
-    line-height: 22px;
-    margin: 16px 0 35px 39px;
-  }
+    line-height: 22px;    
+    margin-top: 16px;
+    margin-bottom: 35px;
+  }  
 
-  & input {
-    width: 83.5%;;
-    height: 51.83px;
-    margin: 0 0 28px 40px;   
-    color: #FFFFFF;
+  &__inp, &__text {    
+    width: 100%;
+    height: 51.83px;   
+    margin-bottom: 28px;
+    color: $main-color-dark-block;
     border: none;
     background: rgba(255, 255, 255, .1);
     padding: 5px 30px 15px 25px;
@@ -49,9 +84,64 @@
 
     &::placeholder {
       font-family: "PT Mono";
-      color: #FFFFFF;
-      opacity: 1;
+      color: $main-color-dark-block;      
     }
   }
+
+  &__text {
+    height: 104px;
+    padding-top: 15px;
+  }
+
+  &__submit {
+    width: 100%;
+    min-height: 46.65px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    font-family: "Roboto Condensed Bold";
+    text-transform: uppercase;
+    margin-bottom: 34px;
+  }
+
+  &__block_check {
+    display: flex;
+    align-items: flex-start;    
+  }  
+
+  &__block_check p {
+    width: 74%;
+    margin: 0 0 0 34px;   
+    font-family: "PT Mono";
+    line-height: 1rem;
+    color: rgba(255, 255, 255, .8);
+    font-size: 14px;
+  }
+
+  &__check {
+    display: none;
+  }
   
+  &__check_lbl {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #FFFFFF;
+    position: relative;
+    cursor: pointer;
+       
+  }
+  
+  &__check:checked + &__check_lbl {    
+    &::before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-top: 1px solid $main-color-dark-block;
+      border-left: 1px solid $main-color-dark-block;
+      top: 26%;
+      left: 36%;
+      transform: rotate(-140deg);
+    }    
+  }  
 }
+
