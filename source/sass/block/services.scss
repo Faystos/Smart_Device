@@ -3,7 +3,7 @@
     background: #1B2D37;
     color: $main-color-dark-block;
     font-family: "Roboto Condensed";
-    padding: 62px 0 36px 0;
+    padding: 47px 0 34px 0;
 
     &__wrap {    
      width: 100%;
@@ -17,11 +17,38 @@
       margin: 5px 5px 43px 10px;
     }
 
-    &__service {      
-      min-height: 256px;      
-      margin: 0 0 30px 0;
-      padding: 21px 0 0 34px;
-      position: relative;      
+    &__service {  
+      display: block;
+      width: 100%;
+      height: 256px;
+      margin: 0 0 30px 0;      
+      padding: 20px 3.9rem 5px 2.4rem;
+      position: relative;
+      font-size: 20px;
+      line-height: 30px;
+
+      &::before {
+        content: "";
+        width: 63px;
+        height: 63px;
+        background: #00B2FF;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      &::after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        bottom: 29px;
+        right: 31px;
+        border: 1px solid;
+        border-left: white;
+        border-bottom: white;
+        transform: rotate(45deg);
+      }
     }
 
     .service-manufacturing {
@@ -50,37 +77,100 @@
         background-size: cover;
       }
       padding-top: 31px;
+    }    
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 32px;
+
+    &__wrap {
+      padding: 0 1.5rem;
     }
 
-    &__service_title {
-      width: 10%;
-      font-size: 20px;
-      line-height: 30px;
+    &__title {
+      width: 86%;
+      font-size: 32px;
+      line-height: 42px;
+      margin-left: 0;
+      margin-bottom: 52px;
     }
 
-    &__link {
-      width: 63px;
-      height: 63px;
-      background: #00B2FF;
-      position: absolute;
-      bottom: 0;
-      right: 0;
+    &__service {      
+      padding: 40px 484px 5px 45px;
+      margin-bottom: 46px;
+    }
 
-      &::before {
-        content: "";
-        width: 5px;
-        height: 5px;
-        position: absolute;
-        top: 45%;
-        left: 42%;
-        border: 1px solid;
-        border-left: white;
-        border-bottom: white;
-        transform: rotate(45deg);
-        
+    .service-manufacturing {
+      background-image: url(../img/bg/services/service_manufacturing_tablet.png);
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/bg/services/service_manufacturing_tablet@2x.png);
+      }
+    }
+
+    .service-installation {
+      background-image: url(../img/bg/services/service_installation_tablet.png);
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/bg/services/service_installation_tablet@2x.png);
+      }
+    }
+
+    .service-components {
+      background-image: url(../img/bg/services/service_components_tablet.png);
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/bg/services/service_components_tablet@2x.png);
+      }
+      padding-top: 50px;
+    }    
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 85px;
+    padding-bottom: 80px;
+
+    &__wrap {
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: 36px;
+      margin-bottom: 59px;
+    }
+
+    &__block-services {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+
+    }
+
+    &__service {
+      width: 31.6%;
+      height: 620px;
+      padding: 50px 133px 5px 44px;
+    }
+
+    .service-manufacturing {
+      background-image: url(../img/bg/services/service_manufacturing_desktop.png);
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/bg/services/service_manufacturing_desktop@2x.png);
+      }
+    }
+
+    .service-installation {
+      background-image: url(../img/bg/services/service_installation_desktop.png);
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/bg/services/service_installation_desktop@2x.png);
+      }
+    }
+
+    .service-components {
+      background-image: url(../img/bg/services/service_components_desktop.png);
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/bg/services/service_components_desktop@2x.png);
       }
     }
   }
-  @media (min-width: $tablet-width) {}
-  @media (min-width: $desktop-width) {}
 }
