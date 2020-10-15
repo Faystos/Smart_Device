@@ -22,7 +22,7 @@
     transform: translate(-50%, -50%);
     max-width: 30.5rem;
     max-height: 605px;    
-    background: #00B2FF;
+    background: $auxiliary-color;
     opacity: 1;    
     padding: 16px 38px 34px;
   }
@@ -91,6 +91,7 @@
   &__text {
     height: 104px;
     padding-top: 15px;
+    resize: none;
   }
 
   &__submit {

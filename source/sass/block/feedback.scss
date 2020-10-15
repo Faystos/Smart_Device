@@ -1,0 +1,154 @@
+.feedback {
+  @media (min-width: $mobile-width)  {
+    background: $auxiliary-color;
+    color: $main-color-dark-block;
+    font-family: "PT Mono";
+    padding-top: 32px;
+    padding-bottom: 42px;
+
+    &__wrap {
+      padding: 0 .9rem;      
+    }
+
+    &__block_text {
+      margin: 0 auto;
+    }
+
+    &__block_text h3 {
+      font-family: "Roboto Condensed";
+      font-size: 28px;
+      line-height: 37px;
+      margin-bottom: 14px;
+    }
+
+    &__block_text p {
+      font-family: "PT Mono";
+      line-height: 22px;
+      margin-bottom: 27px;
+    }
+
+    &__block_inp {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__inp, 
+    &__inp-text {
+      width: 100%;
+      height: 51.83px;
+      color: $main-color-dark-block;
+      border: none;
+      background: rgba(255, 255, 255, .1);
+      margin-bottom: 30px;
+      padding: 5px 17px 9px;
+
+      &::placeholder {
+        font-family: "PT Mono";
+        color: $main-color-dark-block;
+      }
+    }
+
+    &__inp-text {
+      height: 104px;
+      padding-top: 13px;
+      margin-bottom: 26px;
+      resize: none;
+    }
+
+    &__submit {
+      width: 100%;
+      border: 1px solid $main-color-dark-block;
+      border-radius: 5px;
+      font-family: "Roboto Condensed Bold";
+      font-size: .9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06rem;
+      padding: .9rem 1rem;
+      margin-bottom: 30px;
+    }
+
+    &__block_check {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &__block_check p {
+      margin: 0 0 0 14px;
+      width: 76%;
+      font-size: 14px;
+      color: rgba(255, 255, 255, .8);
+    }
+
+    &__check {
+      display: none;
+    }
+
+    &__check_lbl {
+      width: 17px;
+      height: 16px;
+      border: 1px solid $main-color-dark-block;
+      background: transparent;
+      margin: 1px 0 0 2px;
+      position: relative;
+    }
+
+    &__check:checked + &__check_lbl {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid $main-color-dark-block;
+        border-left: 1px solid $main-color-dark-block;
+        top: 25%;
+        left: 27%;
+        transform: rotate(-140deg);
+      }
+    }
+  }
+
+
+  @media (min-width: $tablet-width)  {
+    padding-top: 84px;
+
+    &__wrap {
+      padding: 0 5.5rem;
+    }
+
+    &__block_text h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    &__block_text p {
+      margin-left: 5px;
+      margin-bottom: 53px;
+    }
+
+    &__block_inp {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    &__inp_lbl {
+      width: 47.1%;
+      margin-bottom: 42px;
+    }
+
+    &__inp {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 0;      
+    }
+
+    &__inp-text {
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 159.63px;
+    }
+  }
+
+
+
+  @media (min-width: $desktop-width)  {}
+}

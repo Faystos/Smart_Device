@@ -16,8 +16,7 @@
       margin: 0 auto;
     }
 
-    &__advantage {      
-      // width: 290px;
+    &__advantage {
       width: 100%;
       min-height: 230px;
       font-family: "PT Mono";
@@ -44,14 +43,14 @@
     } 
     
     &__icon {
-      fill: #00B2FF;
+      fill: $auxiliary-color;
     }
 
     &__title {
       width: 247px;
       font-family: "Roboto Condensed Bold";
       font-size: 20px;
-      color: #00B2FF;
+      color: $auxiliary-color;
       margin-top: 7px;
       line-height: 26px;
 

@@ -100,26 +100,19 @@
          <h3>Закажите звонок</h3>
          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
          <form action="" class="popup__form">
-
            <label for="modal-name" class="popup__lbl">
-             <input class="popup__inp popup__inp-name" type="text" name="modal-name" id="modal-name" placeholder="Имя" required="">
-            </label>
-
+            <input class="popup__inp popup__inp-name" type="text" name="modal-name" id="modal-name" placeholder="Имя" required="">
+           </label>
            <label for="modal-tel" class="popup__lbl">
              <input class="popup__inp popup__inp-tel" type="tel" name="modal-tel" id="modal-tel" placeholder="Телефон" required="">
-            </label>
-
+           </label>
            <textarea class="popup__text popup__inp-question" name="modal-question" id="modal-question" cols="30" rows="10" placeholder="Ваш вопрос" required=""></textarea>
            <button class="popup__submit">Отправить</button>
-
            <div class="popup__block_check">
             <input class="popup__check" type="checkbox" name="modal-consent" id="modal-consent">
             <label for="modal-consent" class="popup__check_lbl"></label>
-            <p>Я согласен на обработку персональных данных</p>
-            
-           </div>
-
-           
+            <p>Я согласен на обработку персональных данных</p>            
+           </div>           
          </form>
        </div>
      </div>
@@ -174,6 +167,35 @@
          <a href="/" class="services__service service-installation">Монтаж&nbspпечатных плат</a>
          <a href="/" class="services__service service-components">Комплектующие для&nbspсветотехники</a>
        </div>
+     </div>
+   </section>
+   <section class="feedback">
+     <div class="feedback__wrap">
+       <div class="feedback__block_text">
+         <h3>Остались вопросы? Задайте их нам!</h3>
+         <p>Мы проконсультируем Вас бесплатно</p>
+       </div>
+       <form action="" class="feedback__form">
+         <div class="feedback__block_inp">
+           <label for="form-name" class="feedback__inp_lbl">
+             <input class="feedback__inp feedback__inp-name" type="text" name="form-name" id="form-name" placeholder="Имя" required="">
+           </label>
+
+           <label for="form-tel" class="feedback__inp_lbl">
+             <input class="feedback__inp feedback__inp-tel" type="tel" name="form-tel" id="form-tel" placeholder="Телефон">
+           </label>
+         </div>
+         <textarea class="feedback__inp-text" name="form-text" id="form-text" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+         <div class="feedback__block_submit">
+           <button class="feedback__submit">Задать вопрос</button>
+           <div class="feedback__block_check">
+             <input class="feedback__check" type="checkbox" name="form-check" id="form-check">
+             <label class="feedback__check_lbl" for="form-check"></label>
+             <p>Я согласен на обработку персональных данных</p>
+           </div>
+         </div>
+         
+       </form>
      </div>
    </section>
  </main>
