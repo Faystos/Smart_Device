@@ -53,7 +53,6 @@
       color: $auxiliary-color;
       margin-top: 7px;
       line-height: 26px;
-
     }
 
     &__parag {
@@ -76,6 +75,7 @@
       margin: 3px 0px 0 -2px;
     }   
   }
+  
   @media (min-width: $tablet-width) {
     background:  url(../img/bg/advantages/triangle_bg_tablet.png) 100% -48.3% no-repeat;
 

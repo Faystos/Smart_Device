@@ -87,9 +87,9 @@
        <div class="description__block_text">
          <h2 class="description__title">Печатные платы</h2>
          <p class="description__parag">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-         <button class="description__btn">
-           <span class="description__btn_text_mobile">Бесплатная консультация</span>
-           <span class="description__btn_text_tablet">Получить бесплатную консультацию</span>
+         <button class="description__btn">           
+           <a href="#feedback" class="description__btn_text_mobile">Бесплатная консультация</a>
+           <a href="#feedback"class="description__btn_text_tablet">Получить бесплатную консультацию</a>
          </button>
          <a href="#advantages" class="description__scroll">Скролл вниз</a>
        </div>
@@ -169,7 +169,7 @@
        </div>
      </div>
    </section>
-   <section class="feedback">
+   <section class="feedback" id="feedback">
      <div class="feedback__wrap">
        <div class="feedback__block_text">
          <h3>Остались вопросы? Задайте их нам!</h3>
@@ -182,10 +182,10 @@
            </label>
 
            <label for="form-tel" class="feedback__inp_lbl">
-             <input class="feedback__inp feedback__inp-tel" type="tel" name="form-tel" id="form-tel" placeholder="Телефон">
+             <input class="feedback__inp feedback__inp-tel" type="tel" name="form-tel" id="form-tel" placeholder="Телефон" required>
            </label>
          </div>
-         <textarea class="feedback__inp-text" name="form-text" id="form-text" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+         <textarea class="feedback__inp-text feedback__inp-question" name="form-text" id="form-text" cols="30" rows="10" placeholder="Ваш вопрос" required></textarea>
          <div class="feedback__block_submit">
            <button class="feedback__submit">Задать вопрос</button>
            <div class="feedback__block_check">
@@ -201,6 +201,8 @@
  </main>
 
  <script src="js/modal.js"></script>
+ <script src="js/feedback.js"></script>
+ <script src="js/smoothScroll.js"></script>
 </body>
 </html>
 

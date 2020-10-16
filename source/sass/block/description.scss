@@ -2,19 +2,24 @@
   @media (min-width: $mobile-width) {
     width: 100%;
     min-height: 647px;
-    background: url(../img/bg/description/description_bg_mobile.png) 98.5% 21.5% no-repeat,
-                url(../img/bg/description/description_bg_main_mobile.jpg) 100% 0 / 100% no-repeat;
+    background-color: #1B2D37;
+    background-image: url(../img/bg/description/description_bg_mobile.png),
+                      url(../img/bg/description/triangle_mobile.svg),
+                      url(../img/bg/description/description_bg_main_mobile.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 100.5% 21.5%, 167px 70px;
+    background-size: 294px, 461px, 100%;               
                 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url(../img/bg/description/description_bg_mobile@2x.png),
-                        url(../img/bg/description/description_bg_main_mobile@2x.jpg);
-      background-size: 91.9%, 100%;
+                        url(../img/bg/description/triangle_mobile.svg),
+                        url(../img/bg/description/description_bg_main_mobile@2x.png);
     }                        
   
     &__wrap {
       max-width: 320px;
       padding: 1rem .95rem;
-      margin: 0 auto;
+      margin: 0 auto;      
     }
 
     &__block_text {      

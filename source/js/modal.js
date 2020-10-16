@@ -4,14 +4,9 @@ class Popup {
   constructor (btn, blockModal) {
     this.btn = document.querySelector(`.${btn}`);
     this.blockModal = document.querySelector(`.${blockModal}`);
-    this.blockForm = this.blockModal.querySelector(`.${blockModal}__block_form`);
-    this.form = this.blockForm.querySelector(`.${blockModal}__form`);
+    this.blockForm = this.blockModal.querySelector(`.${blockModal}__block_form`);    
     this.btnClose = this.blockForm.querySelector(`.${blockModal}__close`);
-    this.inpName = this.form.querySelector(`.${blockModal}__inp-name`);
-    this.inpTel = this.form.querySelector(`.${blockModal}__inp-tel`);
-    this.inpQuestion =this.form.querySelector(`.${blockModal}__inp-question`);
-    this.btnSubmit = this.form.querySelector(`.${blockModal}__submit`);
-    this.intCheck = this.form.querySelector(`.${blockModal}__check`);
+    this.inpName = this.blockForm.querySelector(`.${blockModal}__inp-name`);
     this.body = document.querySelector('body');
     this.modalInit();
   }
@@ -19,9 +14,7 @@ class Popup {
   modalInit() {
     this.btn.addEventListener('click', this.openModal);
     this.blockModal.addEventListener('click', this.closeModal);
-    this.blockForm.addEventListener('click', this.hendlerBlockForm);
-    this.btnSubmit.addEventListener('click', this.submitData);
-    
+    this.blockForm.addEventListener('click', this.hendlerBlockForm);    
   }
 
   openModal = () => {
@@ -49,20 +42,7 @@ class Popup {
     } else {
       return;
     }
-  }
-
-  submitData = (evt) => {
-    evt.preventDefault();
-    if (!this.intCheck.checked) return;
-    const data = {
-      name: this.inpName.value,
-      tel: this.inpTel.value,
-      question: this.inpQuestion.value
-    };
-    localStorage.setItem('data', JSON.stringify(data));
-    this.form.reset();
-    this.closeModal();
-  }
+  }  
 }
 
 const modal = new Popup('nav__phone_btn', 'popup');
