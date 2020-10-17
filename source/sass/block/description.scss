@@ -22,13 +22,13 @@
       margin: 0 auto;      
     }
 
-    &__block_text {      
-      font-family: "Roboto Condensed Bold";
+    &__block_text {   
+      font-family: "Roboto Condensed Bold";   
       color: $main-color-dark-block;
       margin: 270px auto 0 auto;      
     }
 
-    &__title {
+    &__block_text h2 {      
       width: 245px;
       font-size: 2.5rem;
       line-height: 46.88px;
@@ -36,7 +36,7 @@
       letter-spacing: 3.4px;      
     }
 
-    &__parag {
+    &__block_text p {
       width: 226px;
       font-family: "PT Mono";      
       margin: 30px 0px 0 51px;
@@ -96,13 +96,13 @@
       margin: 172px 0px 0 48px;
     }
 
-    &__title {      
+    &__block_text h2 {      
       font-size: 60px;
       line-height: 70px;
       letter-spacing: 5.2px;
     }
 
-    &__parag {
+    &__block_text p {
       width: 356px;
       font-size: 18px;
       line-height: 27px;
@@ -154,14 +154,14 @@
       position: relative;
     }    
 
-    &__title {
+    &__block_text h2 {
       width: 718px;     
       font-size: 79px;
       margin-left: -4px;
       letter-spacing: 7.2px;
     }
 
-    &__parag {
+    &__block_text p {
       width: 615px;
       font-size: 22px;
       margin-top: 39px;

@@ -67,7 +67,7 @@
       border-radius: 50%;
       display: flex;
       justify-content: center;
-      align-items: center;      
+      align-items: center;   
     }
 
     &__fb_icon {
@@ -105,17 +105,14 @@
 
     &__sesection_link,
     &__addres_text {
+      display: none;
       font-family: "PT Mono";
       font-size: 15px;
       line-height: 25px;
       margin: 0;
       color: rgba($color:  #1B2D37, $alpha: .5);
       margin-top: 30px;      
-      flex-direction: column;  
-
-      &--close {
-        display: none;
-      }
+      flex-direction: column;      
 
       &--open {
         display: flex;
@@ -144,9 +141,8 @@
       width: 16px;
       height: 16px;      
       margin-right: 3px;
-
-      &--close {
-        position: relative;
+      outline: none;
+      position: relative;
         &::before {
           content: "";
           position: absolute;
@@ -167,8 +163,7 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%) rotate(90deg);
-        }
-      }
+        }      
 
       &--open {
         position: relative;
@@ -181,7 +176,10 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);         
-        }        
+        }  
+        &::after {
+          display: none;
+        }      
       }
     }
 

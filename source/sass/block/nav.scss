@@ -97,7 +97,7 @@
       margin: 0 16px 0 0;
     }
 
-    &__logo_text_main {      
+    &__block_logo h1 {      
       display: block;
       width: 9rem;
       font-size: 1.5rem;      
@@ -106,7 +106,7 @@
       margin: 8px 0 0 0;
     }
 
-    &__logo_text_dop {
+    &__block_logo span {
       font-family: "Roboto Mediumd";
       font-size: 12px;
       color: #788891;
@@ -144,7 +144,7 @@
       margin: 23px 0 0 0;
     }
 
-    &__logo_text_main {
+    &__block_logo h1 {
       letter-spacing: .04rem;
     }
 
