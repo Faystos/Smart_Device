@@ -63,7 +63,15 @@
       letter-spacing: .07rem;
       padding: 18.5px 5px 18.5px 8px;
       background: $auxiliary-color;
-      border-radius: 5px;      
+      border-radius: 5px; 
+
+      &:hover {
+        opacity: .6;
+      }
+      
+      &:active {
+        opacity: .8;
+      }   
     }
 
     &__btn_text_tablet {

@@ -11,13 +11,13 @@
      margin: 0 auto;
     }
 
-    &__title {
+    h3 {
       font-size: 28px;
       line-height: 38px;
       margin: 5px 5px 43px 10px;
     }
 
-    &__service {  
+    a {  
       display: block;
       width: 100%;
       height: 256px;
@@ -26,6 +26,10 @@
       position: relative;
       font-size: 20px;
       line-height: 30px;
+
+      &:hover {
+        opacity: .6;
+      }
 
       &::before {
         content: "";
@@ -88,7 +92,7 @@
       padding: 0 1.5rem;
     }
 
-    &__title {
+    h3 {
       width: 86%;
       font-size: 32px;
       line-height: 42px;
@@ -96,7 +100,7 @@
       margin-bottom: 52px;
     }
 
-    &__service {      
+    a {      
       padding: 40px 484px 5px 45px;
       margin-bottom: 46px;
     }
@@ -134,7 +138,7 @@
       margin: 0 auto;
     }
 
-    &__title {
+    h3 {
       font-size: 36px;
       margin-bottom: 59px;
     }
@@ -145,10 +149,10 @@
       margin: 0 auto;
     }
 
-    &__service {
+    a {
       width: 31.6%;
       height: 620px;
-      padding: 50px 133px 5px 44px;
+      padding: 50px 133px 5px 44px;      
     }
 
     .service-manufacturing {

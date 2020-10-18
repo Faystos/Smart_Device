@@ -32,7 +32,7 @@
       &:hover {
         background: #00B2FF;
         color: $main-color-dark-block;
-        .advantages__title {
+        & h3 {
           color: $main-color-dark-block;
         }
 
@@ -40,32 +40,32 @@
           fill: $main-color-dark-block;
         }        
       }
+
+      h3 {
+        width: 247px;
+        font-family: "Roboto Condensed Bold";
+        font-size: 20px;
+        color: $auxiliary-color;
+        margin-top: 7px;
+        line-height: 26px;
+      }
+
+      p {
+        display: block;
+        width: 250px;
+        line-height: 22px;
+        margin-top: 11px;
+        margin-bottom: 20px;    
+      }
+
+      &:nth-child(3) p {
+        margin-top: -5px;
+      }
     } 
     
     &__icon {
       fill: $auxiliary-color;
-    }
-
-    &__advantage h3 {
-      width: 247px;
-      font-family: "Roboto Condensed Bold";
-      font-size: 20px;
-      color: $auxiliary-color;
-      margin-top: 7px;
-      line-height: 26px;
-    }
-
-    &__advantage p {
-      display: block;
-      width: 250px;
-      line-height: 22px;
-      margin-top: 11px;
-      margin-bottom: 20px;    
-    }
-
-    .negative-margin-top { 
-      margin-top: -5px;           
-    }    
+    }     
 
     .icon-suppliers {      
       margin: -2px 0px 6px -2px;
@@ -97,23 +97,23 @@
       margin: 0;
       margin-bottom: 30px;
       padding-bottom: 0;
-    }
 
-    &__advantage h3 {
-      width: 298px;
-      font-size: 24px;
-      line-height: 34px;
-      margin-top: 2px;
-    }
+      h3 {
+        width: 298px;
+        font-size: 24px;
+        line-height: 34px;
+        margin-top: 2px;
+      }
 
-    &__advantage p {
-      width: 297px;
-      margin-top: 9px;
-    }
+      p {
+        width: 297px;
+        margin-top: 9px;
+      }
 
-    .negative-margin-top { 
-      margin-top: 15px;           
-    }
+      &:nth-child(3) p {
+        margin-top: 15px; 
+      }
+    }    
 
     .icon-privacy {      
       margin: 0 0 5px 0;
@@ -147,20 +147,20 @@
     &__advantage {
       width: 49%;
       min-height: 299px;
-      margin-bottom: 30px;     
+      margin-bottom: 30px;  
+      
+      h3 {
+        font-family: "Roboto Condensed";
+        font-size: 1.5rem;
+        margin: 14px 0 0 17px;   
+      }
+
+      p {
+        width: 89%;
+        margin: 17px 0 0 22px;
+        font-size: 1rem;
+      }
     }    
-
-    &__advantage h3 {
-      font-family: "Roboto Condensed";
-      font-size: 1.5rem;
-      margin: 14px 0 0 17px;   
-    }
-
-    &__advantage p {
-      width: 89%;
-      margin: 17px 0 0 22px;
-      font-size: 1rem;
-    }
 
     .icon-time {
       margin: 16px 0px 0 17px;
