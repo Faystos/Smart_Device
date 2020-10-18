@@ -1,6 +1,9 @@
+'use strict';
+
 class MaskTel {
   constructor() {
     this.inputsTel = document.querySelectorAll('input[type="tel"]');
+    this.inputsTelArr = Array.prototype.slice.call(this.inputsTel);
     this.maskInit();
   }
 
@@ -8,17 +11,16 @@ class MaskTel {
     this.handlerMaskInp();
   }
 
-  handlerMaskInp =() => {
-    this.inputsTel.forEach(el => {
+  handlerMaskInp = () => {
+    this.inputsTelArr.forEach(el => {
       const mask = IMask(el, {mask: '+{7}(000)000-00-00'});
       el.addEventListener('focus', ()=>{
-        el.value = `+7(`;
-      });
-    
+        el.value = '+7(';
+      });    
       el.addEventListener('blur', ()=>{
         el.value = '';
-      });      
-    });
+      });
+    });    
   }
 }
 new MaskTel();

@@ -65,6 +65,14 @@
       letter-spacing: 0.06rem;
       padding: .9rem 1rem;
       margin-bottom: 30px;
+
+      &:hover {
+        opacity: .6;
+      }
+
+      &:active {
+        opacity: .8;
+      }
     }
 
     &__block_check {
@@ -169,14 +177,14 @@
 
   @media (min-width: $desktop-width)  {
     padding-bottom: 82px;
-     background-image: url(../../img/bg/form/triangle_bg_rigth_bot.png),
-                       url(../../img/bg/form/triangle_bg_rigth_top.png);                       
+     background-image: url(../img/bg/form/triangle_bg_rigth_bot.png),
+                       url(../img/bg/form/triangle_bg_rigth_top.png);                       
      background-repeat: no-repeat, no-repeat;    
      background-position: 1576px 126%, 1640px 11%;     
 
      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url(../../img/bg/form/triangle_bg_rigth_bot@2x.png),
-                        url(../../img/bg/form/triangle_bg_rigth_top@2x.png);
+      background-image: url(../img/bg/form/triangle_bg_rigth_bot@2x.png),
+                        url(../img/bg/form/triangle_bg_rigth_top@2x.png);
       background-size: 18%, 14%;
      }   
 
@@ -211,16 +219,16 @@
         left: -824px;
         width: 142%;
         height: 535px;
-        background-image: url(../../img/bg/form/plane.png),
-                          url(../../img/bg/form/triangle_bg_left_small.png),
-                          url(../../img/bg/form/triangle_bg_left_big.png);
+        background-image: url(../img/bg/form/plane.png),
+                          url(../img/bg/form/triangle_bg_left_small.png),
+                          url(../img/bg/form/triangle_bg_left_big.png);
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-position: 66% 47%, 6% 99%, 34% 101%;        
 
         @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-          background-image: url(../../img/bg/form/plane@2x.png),
-                            url(../../img/bg/form/triangle_bg_left_small@2x.png),
-                            url(../../img/bg/form/triangle_bg_left_big@2x.png);
+          background-image: url(../img/bg/form/plane@2x.png),
+                            url(../img/bg/form/triangle_bg_left_small@2x.png),
+                            url(../img/bg/form/triangle_bg_left_big@2x.png);
           background-size: 62%, 46%, 78%;
         }
       }

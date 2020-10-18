@@ -71,8 +71,16 @@
       align-items: center;   
     }
 
-    &__fb_icon {
+    &__icon {
       fill: #CDCDCD;
+
+      &:hover {
+        fill: $auxiliary-color;
+      }
+
+      &:active {
+        opacity: .6;
+      }
     }
 
     &__sections,

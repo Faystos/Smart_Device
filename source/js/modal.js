@@ -27,7 +27,7 @@ class Popup {
   closeModal = (evt) => {    
     this.blockModal.classList.remove('popup--open');
     this.inpName.blur();
-    this.body.style = '';
+    this.body.style.overflow = 'auto';
   }
 
   hendlerBlockForm = (evt) => {

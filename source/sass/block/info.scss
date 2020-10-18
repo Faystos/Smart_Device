@@ -42,6 +42,14 @@
       border: 1px solid $auxiliary-color;
       border-radius: 5px;
       margin-top: 29px;
+
+      &:hover {
+        opacity: .6;
+      }
+
+      &:active {
+        opacity: .8;
+      }
     }    
   }
 
