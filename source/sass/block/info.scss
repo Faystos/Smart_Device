@@ -1,130 +1,159 @@
-.info {
+.info {  
+  margin-top: 84px;
+  margin-bottom: 41px;
 
-  @media (min-width: $mobile-width) {
+  .info__wrap {
+    max-width: 1220px;
+    padding: 0 1.56rem;
+    margin: 0 auto;
+  }   
+  
+  .info__block-info {
+    padding-left: 182px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 200px;
+      height: 365px;
+      background: url(../img/bg/info/info-bg-tablet.jpg) no-repeat;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/bg/info/info-bg-tablet@2x.jpg);
+        background-size: 107%;        
+      }
+      
+      position: absolute;       
+      top: -4px;
+      left: -23px;
+    }
+
+    h3 {
+      font-family: $title-font;
+      font-size: 36px;
+      color: #666666;
+      margin-bottom: 30px;
+    }
+
+    p {
+      width: 100%;
+      font-family: $main-font;
+      line-height: 22px;
+
+      &:first-of-type {
+        margin-bottom: 20px;
+      }
+    }
+
+    p span:first-child {
+      display: none;
+    }
+
+    p span:last-child {
+      display: block;      
+    }
+  } 
+  
+  .info__btn {
+    width: 180px;
+    min-height: 45px;
+    text-transform: uppercase;
+    font-family: $title-bold-font;
+    font-weight: 700;
+    color: $auxiliary-color;
+    border: 1px solid $auxiliary-color;
+    border-radius: 5px;
+    margin-top: 37px;
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &:active {
+      opacity: .8;
+    }
+  }    
+     
+  
+
+  @media (max-width: 1023px) {
+    margin-top: 30px;
+    margin-bottom: 18px;
+
+    .info__wrap {
+      max-width: 770px;      
+    }
+
+    .info__block-info {      
+      padding: 0 0 0 186px;      
+      
+      &::before {
+        content: "";
+        width: 200px;
+        height: 365px;        
+        background-size: 122%;
+        top: -9px;
+        left: -26px;
+      }
+
+      h3 {
+        font-size: 32px;        
+      }
+
+      p {
+        margin-left: 2px;
+
+        &:first-of-type {
+          margin-bottom: 20px;
+        }
+      }      
+
+      p span:first-child {
+        display: inline;
+      }
+  
+      p span:last-child {
+        display: none;      
+      }
+    }       
+
+    .info__btn {
+      margin-top: 42px;
+    }       
+  }
+
+  @media (max-width: 767px) {
     margin-top: 42px;
     padding-bottom: 65px;
 
-    &__wrap {
+    .info__wrap {
       max-width: 320px;
       padding: 0 .9rem;
       margin: 0 auto;
       
     } 
 
-    &__block-info {
-      h3 {
-        font-family: "Roboto Condensed";
-        font-size: 28px;
-        color: #666666;
+    .info__block-info {
+      padding: 3px 0 0 0;
+      &::before {
+        display: none;
+      }
+
+      h3 {       
+        font-size: 28px;        
         margin-bottom: 26px;
       }
 
       p {
-        font-family: "PT Mono";
-        line-height: 22px;
-
         &:first-of-type {
-          margin-bottom: 38px;
+          margin-bottom: 40px;
         }
       }      
-
-      span:last-child {
-        display: none;
-      }  
     }    
 
-    &__btn {
-      width: 180px;
-      min-height: 45px;
-      text-transform: uppercase;
-      font-family: "Roboto Condensed Bold";
-      color: $auxiliary-color;
-      border: 1px solid $auxiliary-color;
-      border-radius: 5px;
-      margin-top: 29px;
-
-      &:hover {
-        opacity: .6;
-      }
-
-      &:active {
-        opacity: .8;
-      }
+    .info__btn {      
+      margin-top: 29px;  
+      margin-left: 3px;   
     }    
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: 30px;
-    margin-bottom: 18px;
-
-    &__wrap {
-      max-width: 770px;
-      padding: 0 1.56rem;
-    }
-
-    &__block-info {      
-      padding: 0 0 0 186px;
-      position: relative;
-      
-      &::before {
-        content: "";
-        width: 200px;
-        height: 365px;
-        background: url(../img/bg/info/info_bg_tablet.jpg) no-repeat;
-
-        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-          background-image: url(../img/bg/info/info_bg_tablet@2x.jpg);
-          background-size: 122%;
-        }
-
-        position: absolute;
-        top: -7px;
-        left: -26px;
-      }
-
-      h3 {
-        font-size: 32px;
-        margin-bottom: 29px;
-      }
-
-      p:first-of-type {
-        margin-bottom: 20px;
-      }
-    }       
-
-    &__btn {
-      margin-top: 42px;
-    }       
-  }
-
-  @media (min-width: $desktop-width){
-    margin-top: 80px;
-    margin-bottom: 41px;
-
-    &__wrap {
-      max-width: 1220px;
-    }   
-    
-    &__block-info {
-      padding-left: 182px;
-
-      &::before {
-        background-size: 107%;        
-        top: 0;
-        left: -23px;
-      }
-
-      h3 {
-        font-size: 36px;
-      }
-
-      p span:first-child {
-        display: none;
-      }
-
-      p span:last-child {
-        display: block;
-      }
-    }       
-  }  
+  }    
 }

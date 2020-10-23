@@ -3,9 +3,9 @@
 class Feedback {
   constructor (form) {
     this.form = document.querySelector(`.${form}__form`);
-    this.inpName = this.form.querySelector(`.${form}__inp-name`);
-    this.inpTel = this.form.querySelector(`.${form}__inp-tel`);
-    this.inpQuestion =this.form.querySelector(`.${form}__inp-question`);
+    this.inpName = this.form.querySelector(`.${form}__input-name`);
+    this.inpTel = this.form.querySelector(`.${form}__input-tel`);
+    this.inpQuestion =this.form.querySelector(`.${form}__input-question`);
     this.intCheck = this.form.querySelector(`.${form}__check`);
     this.btnSubmit = this.form.querySelector(`.${form}__submit`);
     this.initSubmit();

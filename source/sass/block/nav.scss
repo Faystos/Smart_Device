@@ -1,21 +1,212 @@
 .nav {  
-  background-color: transparent;
- 
-  font-family: "Roboto Condensed Bold";
-  color: $main-color-dark-block; 
+  background-color: transparent; 
+  font-family: $title-bold-font;  
+  color: $main-color-dark-block;  
+  margin-bottom: -97px;
+  padding-left: 3.1rem;
+  padding-right: 3.1rem; 
 
-  @media (min-width: $mobile-width) {
+  .nav__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    max-width: 1425px;
+    padding: .6rem .43rem;
+    margin: 0 auto;    
+  }
+
+  .nav__block_logo {
+    display: flex;
+    align-items: center; 
+    margin: 23px 0 0 0;
+
+    h1 {
+      display: block;
+      width: 9rem;
+      font-size: 1.5rem;      
+      line-height: 18px;
+      letter-spacing: .04rem;
+      margin: 8px 0 0 0;      
+    }
+
+    span {
+      font-family: $secondary-font;
+      font-size: 12px;
+      color: #788891;
+      letter-spacing: .001rem;
+    }
+  } 
+  
+  .nav__logo_icon {
+    width: 52px;
+    height: 52px;
+    margin: 0 16px 0 0;
+  }
+
+  .nav__block_menu {
+    margin: 15px auto 0 7.5%;      
+  }
+
+  .nav__btn_menu {
+    width: 37px;
+    height: 13px;    
+    border-top: 1px solid $main-color-dark-block;
+    border-bottom: 1px solid $main-color-dark-block;      
+  }
+
+  .nav__block_communication {
+    width: 654px;
+    margin: 15px 4px 0 15px;
+    display: flex;    
+    justify-content: space-between;      
+  }
+
+  .nav__block_mail {
+    display: flex;
+    align-items: center;
+    margin: 0 15px 0 0;
+  }
+
+  .nav__mail_icon {
+    width: 19px;
+    height: 14px;
+    margin: 0 1.25rem 0 0;
+  }
+
+  .nav__mail_address {
+    display: block;
+    font-family: $main-font;      
+  }
+
+  .nav__block_phone {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .nav__phone_icon {
+    width: 18px;
+    height: 18px;
+    margin: 0 1rem 0 0;
+  }
+
+  .nav__phone_address {
+    display: block;
+    width: 184px;
+    font-family: $main-font;
+    font-size: 1rem;     
+    margin: 6px 41px 0 0;      
+  }
+
+  .nav__phone_btn {
+    display: block;
+    width: 11rem;            
+    padding: .8rem 0 .8rem 0;      
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;      
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;      
+    border: 1px solid $main-color-dark-block;
+    border-radius: 5px;
+    background-color: transparent;
+    z-index: 1;
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &:active {
+      opacity: .8;
+    }
+  }
+  
+
+  @media (max-width: 1023px) {
+    margin-bottom: -84px;
+    padding: 0 1.5rem;    
+
+    .nav__wrap {      
+      padding-top: 16px;
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 720px;
+    }
+    
+
+    .nav__block_logo {            
+      margin: 3px 0px 0px 0;
+
+      h1 {        
+        width: 9rem;
+        font-size: 1.5rem;      
+        line-height: 18px;
+        letter-spacing: .04rem;
+        margin: 8px 0 0 0;        
+      }
+
+      span {
+        font-family: $secondary-font;
+        font-size: 12px;
+        color: #788891;
+        letter-spacing: .001rem;
+      }
+    }      
+
+    .nav__block_menu {
+      margin: 0 2.3rem 3px auto;
+    }
+
+    .nav__block_communication {
+      width: auto;
+      margin: 0;
+      justify-content: flex-end;
+    }    
+
+    .nav__block_mail {
+      margin: 3px 2rem 0 0;
+    }
+
+    .nav__mail_icon {
+      width: 26px;
+      height: 19px;
+      margin: 0;
+    }
+
+    .nav__mail_address {
+      display: none;
+    }
+
+    .nav__block_phone {
+      margin: 0;
+    }
+
+    .nav__phone_icon {
+      width: 24px;
+      height: 24px;
+      margin: 0;
+    }
+
+    .nav__phone_address {
+      display: none;
+    }
+    
+    .nav__phone_btn {
+      display: none;
+    }   
+  }
+
+  @media (max-width: 767px) {
     margin-bottom: -58px;
     padding: 0 1rem;
 
-    &__wrap {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;  
+    .nav__wrap {      
+      width: 100%;
+      padding: 0; 
       margin: 0 auto;
     }
 
-    &__block_logo {
+    .nav__block_logo {
       margin: 1rem 0px 0px 0;
 
       h1 {      
@@ -23,199 +214,54 @@
       }
     }
   
-    &__logo_icon {
+    .nav__logo_icon {
       width: 38px;
       height: 38px;
     }    
 
-    &__block_communication {
-      display: flex;
+    .nav__block_communication {
+      // display: flex;
+      width: auto;
       margin: 0;
     }
   
-    &__block_menu {
+    .nav__block_menu {
       margin: 10px 27px 0 auto;
     }
   
-    &__btn_menu {
-      width: 37px;
-      height: 13px;    
-      border-top: 1px solid $main-color-dark-block;
-      border-bottom: 1px solid $main-color-dark-block;      
-    }
+    // .nav__btn_menu {
+    //   width: 37px;
+    //   height: 13px;    
+    //   border-top: 1px solid $main-color-dark-block;
+    //   border-bottom: 1px solid $main-color-dark-block;      
+    // }
   
-    &__block_mail {
+    .nav__block_mail {
       margin: 16px 22px 0 0;
     }
   
-    &__mail_icon {
+    .nav__mail_icon {
       width: 26px;
       height: 19px;
     }
 
-    &__mail_address {
+    .nav__mail_address {
       display: none;
     }
   
-    &__block_phone {
+    .nav__block_phone {
       margin: 13px 0 0 0;
     }
   
-    &__phone_icon {
+    .nav__phone_icon {
       width: 24px;
       height: 24px;
     }
     
-    &__phone_address {
+    .nav__phone_address {
       display: none;
     }
+}
 
-    &__phone_btn {
-      display: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: -75px;
-    padding: 0 1.5rem;    
-
-    &__wrap {      
-      padding-top: 16px;
-      max-width: 720px;
-    }
-    
-
-    &__block_logo {
-      display: flex;
-      align-items: center;      
-      margin: 3px 0px 0px 0;
-
-      h1 {      
-        display: block;
-        width: 9rem;
-        font-size: 1.5rem;      
-        line-height: 18px;
-        letter-spacing: .04rem;
-        margin: 8px 0 0 0;
-      }
-
-      span {
-        font-family: "Roboto Medium";
-        font-size: 12px;
-        color: #788891;
-        letter-spacing: .001rem;
-      }
-    }
-
-    &__logo_icon {
-      width: 52px;
-      height: 52px;
-      margin: 0 16px 0 0;
-    }    
-
-    &__block_menu {
-      margin: 0 2.3rem 3px auto;
-    }
-
-    &__block_communication {
-      margin: 0 0 0 0;
-    }    
-
-    &__block_mail {
-      margin: 3px 2rem 0 0;
-    }
-
-    &__block_phone {
-      margin: 0;
-    }    
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: -97px;
-    padding-left: 3.1rem;
-    padding-right: 3.1rem; 
-
-    &__wrap {
-      max-width: 1425px;
-      padding: .6rem .43rem;
-    }
-
-    &__block_logo {
-      margin: 23px 0 0 0;
-
-      h1 {
-        letter-spacing: .04rem;
-      }
-    }    
-
-    &__block_menu {
-      margin: 15px auto 0 7.5%;      
-    }
-
-    &__block_communication {
-      width: 654px;
-      margin: 15px 4px 0 15px;      
-      justify-content: space-between;      
-    }
-
-    &__block_mail {
-      display: flex;
-      align-items: center;
-      margin: 0 15px 0 0;
-    }
-
-    &__mail_icon {
-      width: 19px;
-      height: 14px;
-      margin: 0 1.25rem 0 0;
-    }
-
-    &__mail_address {
-      display: block;
-      font-family: "PT Mono";      
-    }
-
-    &__block_phone {
-      display: flex;
-      align-items: center;
-      margin: 0;
-    }
-
-    &__phone_icon {
-      width: 18px;
-      height: 18px;
-      margin: 0 1rem 0 0;
-    }
-
-    &__phone_address {
-      display: block;
-      width: 184px;
-      font-family: "PT Mono";
-      font-size: 1rem;     
-      margin: 6px 41px 0 0;      
-    }
-
-    &__phone_btn {
-      display: block;
-      width: 11rem;            
-      padding: .8rem 0 .8rem 0;      
-      font-size: 0.9rem;
-      letter-spacing: 0.05rem;      
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 0.9rem;      
-      border: 1px solid $main-color-dark-block;
-      border-radius: 5px;
-      background-color: transparent;
-      z-index: 1;
-
-      &:hover {
-        opacity: .6;
-      }
-
-      &:active {
-        opacity: .8;
-      }
-    }
-  }
+ 
 }

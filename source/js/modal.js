@@ -6,7 +6,7 @@ class Popup {
     this.blockModal = document.querySelector(`.${blockModal}`);
     this.blockForm = this.blockModal.querySelector(`.${blockModal}__block_form`);    
     this.btnClose = this.blockForm.querySelector(`.${blockModal}__close`);
-    this.inpName = this.blockForm.querySelector(`.${blockModal}__inp-name`);
+    this.inpName = this.blockForm.querySelector(`.${blockModal}__input-name`);
     this.body = document.querySelector('body');
     this.modalInit();
   }

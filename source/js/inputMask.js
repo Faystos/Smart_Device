@@ -18,7 +18,7 @@ class MaskTel {
         el.value = '+7(';
       });    
       el.addEventListener('blur', ()=>{
-        el.value = '';
+        if (el.value.length <= 3) el.value = '';        
       });
     });    
   }
