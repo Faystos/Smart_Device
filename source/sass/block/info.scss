@@ -1,6 +1,7 @@
 .info {  
   margin-top: 84px;
   margin-bottom: 41px;
+  padding-bottom: 70px;
 
   .info__wrap {
     max-width: 1220px;
@@ -79,6 +80,7 @@
   @media (max-width: 1023px) {
     margin-top: 30px;
     margin-bottom: 18px;
+    padding-bottom: 65px;
 
     .info__wrap {
       max-width: 770px;      
@@ -124,7 +126,8 @@
 
   @media (max-width: 767px) {
     margin-top: 42px;
-    padding-bottom: 65px;
+    padding-bottom: 47px;
+   
 
     .info__wrap {
       max-width: 320px;
