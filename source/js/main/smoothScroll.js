@@ -6,12 +6,12 @@ class Scrolling {
     this.scrollInit();
   }
 
-  scrollInit() {     
+  scrollInit() {
     this.linkNavArr.forEach(el => {
-      el.addEventListener('click', evt => {         
+      el.addEventListener('click', evt => {
         evt.preventDefault();
         let speed = this.speed;
-        let w = window.pageYOffset;  
+        let w = window.pageYOffset;
         let hash = evt.target.href.replace(/[^#]*(.*)/, '$1');
         let t = document.querySelector(hash).getBoundingClientRect().top;
         let start = null;
@@ -27,9 +27,9 @@ class Scrolling {
           } else {
               location.hash = hash;
           }
-        }        
+        }
       }, false);
-    });    
+    });
   }
 }
 

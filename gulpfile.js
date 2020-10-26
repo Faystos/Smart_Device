@@ -20,13 +20,17 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
 gulp.task("babel", function() {
-  return gulp.src("source/js/*.js")
-    .pipe(concat("script.js"))    
-    .pipe(babel())    
-    .pipe(uglify())
-    .pipe(rename("script.min.js"))
+  return gulp.src("source/js/main/*.js")
+    .pipe(concat("main.js"))
+    .pipe(babel())
 		.pipe(gulp.dest("build/js"))
   });
+
+gulp.task("jsVendor", function() {
+  return gulp.src("source/js/vendor/*.js")
+    .pipe(concat("vendor.js"))
+    .pipe(gulp.dest("build/js"))
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -34,6 +38,7 @@ gulp.task("css", function () {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -53,7 +58,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
-  gulp.watch("source/js/*.js", gulp.series("babel"));
+  gulp.watch("source/js/main/*.js", gulp.series("babel"));
 });
 
 gulp.task("refresh", function (done) {
@@ -97,7 +102,7 @@ gulp.task("html", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",    
+    "source/img/**",
     "source//*.ico"
     ], {
       base: "source"
@@ -109,5 +114,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "babel", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "babel", "jsVendor", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

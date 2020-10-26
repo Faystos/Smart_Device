@@ -1,145 +1,146 @@
 .popup {
   display: none;
-  position: fixed;   
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background:rgba(0, 0, 0, .9);
+  background: rgba(0, 0, 0, 0.9);
   font-family: $title-font;
-  color: $main-color-dark-block;  
+  color: $main-color-dark-block;
   padding: 16rem 0;
   z-index: 999;
-
-  &--open {
-    display: block;
-  }
-
-  &__block_form {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 30.5rem;
-    max-height: 605px;    
-    background: $auxiliary-color;
-    opacity: 1;    
-    padding: 16px 38px 34px;
-  }
-
-  &__close {
-    position: absolute;
-    top: 18px;
-    right: 18px;
-    width: 16.56px;
-    height: 16.56px;      
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 125%;
-      height: 1px;
-      border: 1px solid #FFFFFF;
-      border-radius: 5px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(135deg);      
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 125%;
-      height: 1px;
-      border: 1px solid #FFFFFF;
-      border-radius: 5px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(45deg);  
-    }
-  }
-
-  & h3 {
-    font-size: 28px;    
-    margin-top: 16px;
-  }
-
-  & p {
-    width: 89%;
-    font-family: $main-font;
-    line-height: 22px;    
-    margin-top: 16px;
-    margin-bottom: 35px;
-  }  
-
-  &__input, &__text {    
-    width: 100%;
-    height: 51.83px;   
-    margin-bottom: 28px;
-    color: $main-color-dark-block;
-    border: none;
-    background: rgba(255, 255, 255, .1);
-    padding: 5px 30px 15px 25px;
-    
-
-    &::placeholder {
-      font-family: $main-font;
-      color: $main-color-dark-block;      
-    }
-  }
-
-  &__text {
-    height: 104px;
-    padding-top: 15px;
-    resize: none;
-  }
-
-  &__submit {
-    width: 100%;
-    min-height: 46.65px;
-    border: 1px solid #FFFFFF;
-    border-radius: 5px;
-    font-family: $title-bold-font;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 34px;
-  }
-
-  &__block_check {
-    display: flex;
-    align-items: flex-start;    
-  }  
-
-  &__block_check p {
-    width: 74%;
-    margin: 0 0 0 34px;   
-    font-family: $main-font;
-    line-height: 1rem;
-    color: rgba(255, 255, 255, .8);
-    font-size: 14px;
-  }  
-  
-  &__check_label {
-    width: 16px;
-    height: 16px;
-    border: 1px solid #FFFFFF;
-    position: relative;
-    cursor: pointer;
-       
-  }
-  
-  &__check:checked + &__check_label {    
-    &::before {
-      content: "";
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      border-top: 1px solid $main-color-dark-block;
-      border-left: 1px solid $main-color-dark-block;
-      top: 26%;
-      left: 36%;
-      transform: rotate(-140deg);
-    }    
-  }  
 }
 
+.popup--open {
+  display: block;
+}
+
+.popup__block_form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 30.5rem;
+  max-height: 605px;
+  background: $auxiliary-color;
+  opacity: 1;
+  padding: 16px 38px 34px;
+}
+
+.popup__close {
+  @include button-reset;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 16.56px;
+  height: 16.56px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 125%;
+    height: 1px;
+    border: 1px solid $main-color-dark-block;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(135deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 125%;
+    height: 1px;
+    border: 1px solid $main-color-dark-block;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+.popup h3 {
+  font-size: 28px;
+  margin-top: 16px;
+}
+
+.popup p {
+  width: 89%;
+  font-family: $main-font;
+  line-height: 22px;
+  margin-top: 16px;
+  margin-bottom: 35px;
+}
+
+.popup__input,
+.popup__input-text {
+  width: 100%;
+  height: 51.83px;
+  margin-bottom: 28px;
+  color: $main-color-dark-block;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 30px 15px 25px;
+
+
+  &::placeholder {
+    font-family: $main-font;
+    color: $main-color-dark-block;
+  }
+}
+
+.popup__input-text {
+  height: 104px;
+  padding-top: 15px;
+  resize: none;
+}
+
+.popup__submit {
+  @include button-reset;
+  width: 100%;
+  min-height: 46.65px;
+  border: 1px solid $main-color-dark-block;
+  border-radius: 5px;
+  font-family: $title-bold-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+
+.popup__block_check {
+  display: flex;
+  align-items: flex-start;
+}
+
+.popup__block_check p {
+  width: 74%;
+  margin: 0 0 0 34px;
+  font-family: $main-font;
+  line-height: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+.popup__check_label {
+  width: 16px;
+  height: 16px;
+  border: 1px solid $main-color-dark-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.popup__check:checked + .popup__check_label {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid $main-color-dark-block;
+    border-left: 1px solid $main-color-dark-block;
+    top: 26%;
+    left: 36%;
+    transform: rotate(-140deg);
+  }
+}

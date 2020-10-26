@@ -1,232 +1,208 @@
-.advantages {  
-    background: url(../img/bg/advantages/triangle-bg-rigth-desktop.png) 98% 47% no-repeat,
-                url(../img/bg/advantages/triangle-bg-center-desktop.png) 53.3% 50% no-repeat,
-                url(../img/bg/advantages/triangle-bg-left-small-desktop.png) 13% 5% no-repeat,
-                url(../img/bg/advantages/triangle-bg-left-big-desktop.png) 0% 150% no-repeat;
+.advantages {
+  background: url("../img/bg/advantages/triangle-bg-rigth-desktop.png") 98% 47% no-repeat,
+    url("../img/bg/advantages/triangle-bg-center-desktop.png") 53.3% 50% no-repeat,
+    url("../img/bg/advantages/triangle-bg-left-small-desktop.png") 13% 5% no-repeat,
+    url("../img/bg/advantages/triangle-bg-left-big-desktop.png") 0% 150% no-repeat;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url(../img/bg/advantages/triangle-bg-rigth-desktop@2x.png),
-                        url(../img/bg/advantages/triangle-bg-center-desktop@2x.png),
-                        url(../img/bg/advantages/triangle-bg-left-small-desktop@2x.png),
-                        url(../img/bg/advantages/triangle-bg-left-big-desktop@2x.png);
-      background-size: 17%, 45%, 17.6%, 30%;                  
-    }    
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg/advantages/triangle-bg-rigth-desktop@2x.png"),
+      url("../img/bg/advantages/triangle-bg-center-desktop@2x.png"),
+      url("../img/bg/advantages/triangle-bg-left-small-desktop@2x.png"),
+      url("../img/bg/advantages/triangle-bg-left-big-desktop@2x.png");
+    background-size: 17%, 45%, 17.6%, 30%;
+  }
 
-    margin-top: 0;
-    padding-top: 111px;
-    margin-bottom: -400px;
-    padding-bottom: 400px;    
+  margin-top: 0;
+  padding-top: 111px;
+  margin-bottom: -400px;
+  padding-bottom: 400px;
 
-    .advantages__wrap {
-      max-width: 1219px; 
-      padding: 0 .9rem;
-      margin: 0 auto; 
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;    
-    }
+  .advantages__wrap {
+    max-width: 1219px;
+    padding: 0 0.9rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    .advantages__advantage {
-      width: 48%;
-      min-height: 299px;
-      margin-bottom: 30px;  
-      font-family: $main-font;
-      color: #666666;      
-      padding: 24.55px 5px 5px 25px;
-      border: 1px solid #EBEBEB;
-      border-left: 2px solid #00B2FF;  
-      margin-left: auto;
-      margin-right: auto;
-      background: $main-color-dark-block;
+  .advantages__advantage {
+    width: 48%;
+    min-height: 299px;
+    margin-bottom: 30px;
+    font-family: $main-font;
+    color: #666666;
+    padding: 24.55px 5px 5px 25px;
+    border: 1px solid #ebeeeb;
+    border-left: 2px solid $auxiliary-color;
+    margin-left: auto;
+    margin-right: auto;
+    background: $main-color-dark-block;
+    cursor: pointer;
 
-      &:hover {
-        background: #00B2FF;
+    &:hover {
+      background: $auxiliary-color;
+      color: $main-color-dark-block;
+
+      & h3 {
         color: $main-color-dark-block;
-        & h3 {
-          color: $main-color-dark-block;
-        }
+      }
 
       .advantages__icon {
-          fill: $main-color-dark-block;
-        }        
+        fill: $main-color-dark-block;
       }
-      
-      h3 {
-        font-family: $title-font;
-        font-size: 1.5rem;
-        margin: 20px 0 0 17px;   
-      }
-
-      p {
-        width: 90%;
-        margin: 23px 0 0 21px;
-        line-height: 22px;
-        font-size: 1rem;
-      }
-    } 
-    
-    .advantages__icon {
-      fill: $auxiliary-color;
-    } 
-
-    .icon-time {
-      margin: 16px 0 0 17px;
     }
 
-    .icon-suppliers {
-      margin: 18px 0 0 25px;
+    h3 {
+      font-family: $title-font;
+      font-size: 1.5rem;
+      margin: 22px 0 0 17px;
+      color: $auxiliary-color;
     }
 
-    .icon-privacy {
-      margin: 27px 0 0 20px
+    p {
+      width: 90%;
+      margin: 20px 0 0 17px;
+      line-height: 22px;
+      font-size: 1rem;
     }
+  }
 
-    .icon-costing {
-      margin: 19px 0 0 22px
-    }
-  
+  .advantages__icon {
+    fill: $auxiliary-color;
+  }
 
-  @media (max-width: 1023px) {
-    background:  url(../img/bg/advantages/triangle-bg-tablet.png) 100% -48.3% no-repeat;
+  .icon-time {
+    margin: 16px 0 0 17px;
+  }
+
+  .icon-suppliers {
+    margin: 18px 0 0 25px;
+  }
+
+  .icon-privacy {
+    margin: 27px 0 0 20px;
+  }
+
+  .icon-costing {
+    margin: 19px 0 0 22px;
+  }
+
+
+  @media (max-width: $desktop-width) {
+    background: url("../img/bg/advantages/triangle-bg-tablet.png") 100% -48.3% no-repeat;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: url(../img/bg/advantages/triangle-bg-tablet@2x.png) 100% 49% / 73% no-repeat;
+      background: url("../img/bg/advantages/triangle-bg-tablet@2x.png") 100% 49% / 73% no-repeat;
     }
 
     padding-top: 37px;
 
-    .advantages__wrap {                
+    .advantages__wrap {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;      
+      justify-content: space-between;
       padding: 17px 1.56rem 5px 1.56rem;
-      
     }
 
-    .advantages__advantage {      
-      width: 48%;
+    .advantages__advantage {
       min-height: 230px;
-      margin: 0;
-      margin-bottom: 30px;
       padding-bottom: 21px;
+      margin-left: 0;
+      margin-right: 0;
 
       h3 {
         width: 95%;
         font-size: 24px;
-        line-height: 34px;       
-        margin: 3px 0 0 0;
+        line-height: 34px;
+        margin: 5px 0 0 0;
       }
 
       p {
         width: 93%;
         margin: 8px 0 0 0;
-        line-height: 22px;        
+        line-height: 22px;
       }
 
       &:nth-child(3) p {
-        margin-top: 15px; 
+        margin-top: 15px;
       }
-    } 
+    }
 
     .icon-time {
       margin: 0;
     }
-    
-    .icon-suppliers {      
+
+    .icon-suppliers {
       margin: 0 0 3px 0;
     }
 
-    .icon-privacy {      
+    .icon-privacy {
       margin: 0 0 6px 0;
     }
 
     .icon-costing {
       margin: 0 0 2px 0;
-    }  
+    }
   }
 
-  @media (max-width: 767px) {
-    background:  url(../img/bg/advantages/triangle-bg-mobile.png) 100% 136.7% no-repeat;
+  @media (max-width: $tablet-width) {
+    background: url("../img/bg/advantages/triangle-bg-mobile.png") 100% 136.7% no-repeat;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: url(../img/bg/advantages/triangle-bg-mobile@2x.png) 100% 123% / 100% no-repeat;
+      background: url("../img/bg/advantages/triangle-bg-mobile@2x.png") 100% 123% / 100% no-repeat;
     }
 
-    padding-top: 0px;
-
+    padding-top: 0;
     margin-top: 37px;
     margin-bottom: -200px;
     padding-bottom: 200px;
 
     .advantages__wrap {
-      padding: 0 .9rem;
+      padding: 0 0.9rem;
       margin: 0 auto;
       display: block;
     }
 
-    .advantages__advantage {      
+    .advantages__advantage {
       width: 100%;
-      max-width: 444px;
-      min-height: 230px;
-      font-family: $main-font;
-      color: #666666;      
-      padding: 24.55px 5px 5px 25px;
-      border: 1px solid #EBEBEB;
-      border-left: 2px solid #00B2FF;
-      margin-bottom: 20px;
       margin-left: auto;
       margin-right: auto;
-      background: $main-color-dark-block;
-
-      &:hover {
-        background: #00B2FF;
-        color: $main-color-dark-block;
-        & h3 {
-          color: $main-color-dark-block;
-        }
-
-        .advantages__icon {
-          fill: $main-color-dark-block;
-        }        
-      }
+      max-width: 444px;
+      min-height: 230px;
+      padding: 24.55px 5px 5px 25px;
+      margin-bottom: 20px;
 
       h3 {
         width: 247px;
         font-family: $title-bold-font;
-        font-weight: 700;
         font-size: 20px;
-        color: $auxiliary-color;
-        margin-top: 7px;
+        margin-top: 11px;
         line-height: 26px;
       }
 
-      p {        
+      p {
         width: 97%;
         line-height: 22px;
-        margin-top: 11px;
-        margin-bottom: 20px;    
+        margin-top: 8px;
+        margin-bottom: 20px;
       }
 
       &:nth-child(3) p {
         margin-top: -5px;
       }
-    } 
-    
-    .advantages__icon {
-      fill: $auxiliary-color;
-    }     
-
-    .icon-suppliers {      
-      margin: -2px 0px 6px -2px;
     }
 
-    .icon-privacy {      
+    .advantages__icon {
+      fill: $auxiliary-color;
+    }
+
+    .icon-suppliers {
+      margin: -2px 0 6px -2px;
+    }
+
+    .icon-privacy {
       margin: 3px 0 2px -2px;
-    }   
+    }
   }
-  
-  
-  
 }
-
-

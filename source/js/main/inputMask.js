@@ -16,12 +16,11 @@ class MaskTel {
       const mask = IMask(el, {mask: '+{7}(000)000-00-00'});
       el.addEventListener('focus', ()=>{
         el.value = '+7(';
-      });    
-      el.addEventListener('blur', ()=>{
-        if (el.value.length <= 3) el.value = '';        
       });
-    });    
+      el.addEventListener('blur', ()=>{
+        if (el.value.length <= 2) el.value = '';
+      });
+    });
   }
 }
 new MaskTel();
-

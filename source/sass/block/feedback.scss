@@ -1,36 +1,32 @@
 .feedback {
-
   background: $auxiliary-color;
   color: $main-color-dark-block;
   font-family: $main-font;
   padding-top: 99px;
-  
- 
-  padding-bottom: 82px;
-  background-image: url(../img/bg/form/triangle-bg-rigth-bot.png),
-                    url(../img/bg/form/triangle-bg-rigth-top.png);                       
-  background-repeat: no-repeat, no-repeat;    
-  background-position: 1576px 126%, 1640px 11%;     
+  padding-bottom: 78px;
+  background-image: url("../img/bg/form/triangle-bg-rigth-bot.png"),
+    url("../img/bg/form/triangle-bg-rigth-top.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 1576px 126%, 1640px 11%;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  background-image: url(../img/bg/form/triangle-bg-rigth-bot@2x.png),
-                    url(../img/bg/form/triangle-bg-rigth-top@2x.png);
-  background-size: 18%, 14%;
-  }   
+    background-image: url("../img/bg/form/triangle-bg-rigth-bot@2x.png"),
+      url("../img/bg/form/triangle-bg-rigth-top@2x.png");
+    background-size: 18%, 14%;
+  }
 
   .feedback__wrap {
-    max-width: 1220px;      
+    max-width: 1220px;
     display: flex;
-    flex-direction: column;      
+    flex-direction: column;
     align-items: flex-end;
     padding: 0 24px 0 0;
-    margin: 0 auto;           
+    margin: 0 auto;
   }
 
   .feedback__block_text {
     width: 48%;
     margin: 0;
-    
   }
 
   .feedback__block_text h3 {
@@ -49,7 +45,7 @@
   .feedback__form {
     width: 48%;
     position: relative;
-    
+
     &::before {
       content: "";
       position: absolute;
@@ -57,16 +53,16 @@
       left: -824px;
       width: 142%;
       height: 535px;
-      background-image: url(../img/bg/form/plane.png),
-                        url(../img/bg/form/triangle-bg-left-small.png),
-                        url(../img/bg/form/triangle-bg-left-big.png);
+      background-image: url("../img/bg/form/plane.png"),
+        url("../img/bg/form/triangle-bg-left-small.png"),
+        url("../img/bg/form/triangle-bg-left-big.png");
       background-repeat: no-repeat, no-repeat, no-repeat;
-      background-position: 66% 47%, 6% 99%, 34% 101%;        
+      background-position: 66% 47%, 6% 99%, 34% 101%;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url(../img/bg/form/plane@2x.png),
-                          url(../img/bg/form/triangle-bg-left-small@2x.png),
-                          url(../img/bg/form/triangle-bg-left-big@2x.png);
+        background-image: url("../img/bg/form/plane@2x.png"),
+          url("../img/bg/form/triangle-bg-left-small@2x.png"),
+          url("../img/bg/form/triangle-bg-left-big@2x.png");
         background-size: 62%, 46%, 78%;
       }
     }
@@ -83,21 +79,20 @@
     color: $main-color-dark-block;
     border: none;
     border-radius: 0;
-    -webkit-appearance: none;
     font-family: $main-font;
-    background: rgba(255, 255, 255, .1);
-    padding: 5px 20px 9px 20px;   
-    font-size: 16px;   
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 20px 9px 20px;
+    font-size: 16px;
 
     &::placeholder {
-        font-family: $main-font;
-        color: $main-color-dark-block;
+      font-family: $main-font;
+      color: $main-color-dark-block;
     }
   }
 
   .feedback__input {
     width: 47.5%;
-    height: 51.83px;   
+    height: 51.83px;
   }
 
   .feedback__input-text {
@@ -106,31 +101,32 @@
     padding-top: 13px;
     margin-bottom: 41px;
     resize: none;
-  }  
+    overflow: auto;
+  }
 
   .feedback__block_submit {
-    display: flex;    
-    justify-content: space-between;  
+    display: flex;
+    justify-content: space-between;
   }
 
   .feedback__submit {
+    @include button-reset;
     width: 48%;
     border: 1px solid $main-color-dark-block;
     border-radius: 5px;
     font-family: $title-bold-font;
-    font-weight: 700;
-    font-size: .9rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.06rem;
-    padding: .9rem 1rem;
+    padding: 0.9rem 1rem;
     margin-bottom: 30px;
 
     &:hover {
-      opacity: .6;
+      opacity: 0.6;
     }
 
     &:active {
-      opacity: .8;
+      opacity: 0.8;
     }
   }
 
@@ -145,7 +141,14 @@
     margin: 0 0 0 16px;
     width: 76%;
     font-size: 14px;
-    color: rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .feedback__check {
+    &:hover + .feedback__check_label,
+    &:focus + .feedback__check_label {
+      border-color: rgba($color: $main-color-dark-block, $alpha: 0.6);
+    }
   }
 
   .feedback__check_label {
@@ -156,6 +159,8 @@
     cursor: pointer;
     margin: 1px 0 0 2px;
     position: relative;
+    font-size: 0;
+    line-height: 0;
   }
 
   .feedback__check:checked + &__check_label {
@@ -171,15 +176,14 @@
       transform: rotate(-140deg);
     }
   }
-  
 
-  @media (max-width: 1023px)  {
+  @media (max-width: $desktop-width) {
     padding-top: 84px;
-    padding-bottom: 75px;
+    padding-bottom: 71px;
 
     .feedback__wrap {
       padding: 0 5.5rem;
-      max-width: 942px;      
+      max-width: 942px;
     }
 
     .feedback__block_text {
@@ -208,12 +212,12 @@
       justify-content: space-between;
       flex-direction: row;
       margin-bottom: 43px;
-    }    
+    }
 
     .feedback__input {
       padding-left: 20px;
       padding-right: 20px;
-      margin-bottom: 0;      
+      margin-bottom: 0;
     }
 
     .feedback__input-text {
@@ -224,8 +228,8 @@
     }
 
     .feedback__block_submit {
-      display: flex;    
-      justify-content: space-between;  
+      display: flex;
+      justify-content: space-between;
     }
 
     .feedback__submit {
@@ -243,21 +247,16 @@
     }
   }
 
-
-
-
-
-
-  @media (max-width: 767px)  {
+  @media (max-width: $tablet-width) {
     background: $auxiliary-color;
     color: $main-color-dark-block;
     font-family: $main-font;
     padding-top: 32px;
-    padding-bottom: 43px;
+    padding-bottom: 39px;
 
     .feedback__wrap {
-      padding: 0 .9rem;
-      max-width: 458px;      
+      padding: 0 0.9rem;
+      max-width: 458px;
     }
 
     .feedback__block_text {
@@ -284,11 +283,11 @@
       margin-bottom: 0;
     }
 
-    .feedback__input, 
+    .feedback__input,
     .feedback__input-text {
-      width: 100%;        
+      width: 100%;
       margin-bottom: 30px;
-      padding: 5px 17px 9px;     
+      padding: 5px 17px 9px;
     }
 
     .feedback__input-text {
@@ -303,9 +302,9 @@
     }
 
     .feedback__submit {
-      width: 100%;     
-      font-size: .9rem;      
-      padding: .9rem 1rem;        
+      width: 100%;
+      font-size: 0.9rem;
+      padding: 0.9rem 1rem;
     }
 
     .feedback__block_check {
@@ -316,7 +315,7 @@
     }
 
     .feedback__block_check p {
-      margin: 0 0 0 14px;      
-    }     
-  }      
+      margin: 0 0 0 14px;
+    }
+  }
 }
