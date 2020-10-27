@@ -20,3 +20,10 @@ trim_trailing_whitespace = true
 
 [*.md]
 trim_trailing_whitespace = false
+
+[source/js/vendor/*.js]
+end_of_line = none
+indent_size = none
+indent_style = none
+insert_final_newline = none
+trim_trailing_whitespace = none
