@@ -27,35 +27,3 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-@mixin button-reset {
-  padding: 0;
-  border: none;
-  font-family: inherit;
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-@mixin opacity-link {
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.8;
-  }
-}
