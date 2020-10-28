@@ -26,6 +26,10 @@ class FormValidation {
     this.inputText.addEventListener('input', () => {
       this.inputText.setCustomValidity('');
     });
+
+    this.inputCheck.addEventListener('input', () => {
+      this.inputCheck.setCustomValidity('');
+    });
   }
 
   handlerForm = evt => {
@@ -73,6 +77,14 @@ class FormValidation {
     return true;
   }
 
+  inputCheckValidation = input => {
+    if (!input.checked) {
+      input.setCustomValidity('Для того, что-бы задать вопрос, необходимо согласиться с условиями.');
+      return false;
+    }
+    return true;
+  }
+
   inputsValidation = () => {
     if (this.inputName.value.length) {
       let chekInput = this.inputNameValidation(this.inputName);
@@ -95,10 +107,14 @@ class FormValidation {
       }
     }
 
-    if(!this.inputName.validationMessage && !this.inputTel.validationMessage && !this.inputText.validationMessage) {
+    this.inputCheckValidation(this.inputCheck);
+
+    if(!this.inputName.validationMessage && !this.inputTel.validationMessage && !this.inputText.validationMessage && !this.inputCheck.validationMessage) {
       return true;
     }
   }
+
+
 
   handlerDataSubmit = () => {
     const data = {
@@ -109,8 +125,6 @@ class FormValidation {
     localStorage.setItem('data', JSON.stringify(data));
     this.formSubmit.reset();
   }
-
-
 }
 
 new FormValidation('feedback');
