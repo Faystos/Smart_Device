@@ -173,7 +173,7 @@
     }
 
     .service-manufacturing {
-      background: url("../img/bg/services/service-manufacturing-mobile.png") no-repeat;
+      background-image: url("../img/bg/services/service-manufacturing-mobile.png");
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/bg/services/service-manufacturing-mobile@2x.png");
@@ -182,7 +182,7 @@
     }
 
     .service-installation {
-      background: url("../img/bg/services/service-installation-mobile.png") no-repeat;
+      background-image: url("../img/bg/services/service-installation-mobile.png");
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/bg/services/service-installation-mobile@2x.png");
@@ -191,7 +191,7 @@
     }
 
     .service-components {
-      background: url("../img/bg/services/service-components-mobile.png") no-repeat;
+      background-image: url("../img/bg/services/service-components-mobile.png");
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/bg/services/service-components-mobile@2x.png");
